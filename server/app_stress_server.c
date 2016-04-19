@@ -31,18 +31,37 @@
 //在接收的文件数据被保存后, 服务器等待10秒, 然后关闭连接.
 #define WAITTIME 10
 
+#define MAXLINE 4096 //服务器监听端口号
+#define SERV_PORT 3000 //允许保存的未处理连接请求数目
+#define LISTENQ 8
+
 //这个函数通过在客户和服务器之间创建TCP连接来启动重叠网络层. 它返回TCP套接字描述符, STCP将使用该描述符发送段. 如果TCP连接失败, 返回-1.
 int son_start() {
 
   //你需要编写这里的代码.
 
+      socklen_t clilen;
+    int listenfd;
+    //char buf[MAXLINE];
+    struct sockaddr_in cliaddr,servaddr;
+    listenfd = socket(AF_INET,SOCK_STREAM,0);
+    memset(&servaddr, 0, sizeof(struct sockaddr_in));
+    servaddr.sin_family=AF_INET;
+    servaddr.sin_addr.s_addr=htonl(INADDR_ANY);
+    servaddr.sin_port=htons(SON_PORT);
+    bind(listenfd,(struct sockaddr *)&servaddr,sizeof(servaddr));
+    listen(listenfd,LISTENQ);//开始监听
+    clilen = sizeof(cliaddr);
+    connfd = accept(listenfd,(struct sockaddr *)&cliaddr,&clilen);
+    return connfd;
 }
 
 //这个函数通过关闭客户和服务器之间的TCP连接来停止重叠网络层
 void son_stop(int son_conn) {
 
   //你需要编写这里的代码.
-
+    printf("close son_conn\n");
+        close(son_conn);
 }
 
 int main() {

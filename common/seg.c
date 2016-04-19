@@ -31,7 +31,29 @@
 //
 int sip_sendseg(int connection, seg_t* segPtr)
 {
-  return 0;
+	segPtr->header.checksum = checksum(segPtr);
+    char buffer[1504];
+    memset(&buffer,0,sizeof(buffer));
+    buffer[0] = '!';
+    buffer[1] = '&';
+
+	int j;
+	for(j = 0; j < sizeof(seg_t); j ++)
+		buffer[2+j] = ((char*)(segPtr))[j];
+    buffer[2+j] = '!';
+    buffer[j+3] = '#';
+
+
+    if(send(connection,buffer,sizeof(buffer),0)<=0)
+    {
+        printf("send error!\n");
+        return -1;
+    }
+    else
+    {
+        return 1;
+    }
+    
 }
 
 // 通过重叠网络(在本实验中，是一个TCP连接)接收STCP段. 我们建议你使用recv()一次接收一个字节.
@@ -58,7 +80,67 @@ int sip_sendseg(int connection, seg_t* segPtr)
 // 
 int sip_recvseg(int connection, seg_t* segPtr)
 {
-  return 0;
+   int finish = 1;
+    while(finish)
+    {	
+        char temp;
+        recv(connection,&temp,sizeof(char),0);
+        if(temp=='!')
+        {
+                recv(connection,&temp,sizeof(char),0);
+                if(temp == '&')
+                {
+                    char buffer[1504];
+                    memset(&buffer,0,1504);
+                    char temp2 = 0;
+                    int i = 0;
+                    while(temp2!='!')
+                    {
+                        recv(connection,&temp2,sizeof(char),0);
+                        if(temp2!='!'&&i<1504)
+                        {
+                            buffer[i] = temp2;
+                            i++;
+                        } 
+                        else
+                        {
+                            if(i>=1504)
+                            {
+                                printf("too more in seg!\n");
+                             }
+                        } 
+                    }
+                    recv(connection,&temp2,sizeof(char),0);
+                    if(temp2 == '#')
+                    { 
+                       //if(seglost())
+                        //{
+                         //   printf("lose packet!\n");
+                         //   return 1;
+                        //} 
+                        printf("receive one packet!\n");
+                        memcpy(segPtr,buffer,sizeof(seg_t));
+						
+						if(segPtr->header.checksum != checkchecksum(segPtr))
+							return 1;
+						
+                        return 0;
+                    }
+                    else
+                    {
+                        printf("no nomal '#' in tail\n");
+                        //return 0;
+                        
+                    } 
+                }
+                else{
+                    printf("no nomal '&' in head\n");
+                    //return 0;
+                } 
+        }
+        
+    }
+    return 0;
 }
 
 int seglost(seg_t* segPtr) {
@@ -91,11 +173,79 @@ int seglost(seg_t* segPtr) {
 //校验和计算使用1的补码.
 unsigned short checksum(seg_t* segment)
 {
-  return 0;
+	segment->header.checksum = 0;
+	int checksum = sizeof(stcp_hdr_t) + strlen(segment->data);
+	
+	/*if(((int)checksum/2 )* 2 != checksum)
+	{
+		checksum++;
+		char *temp = (char *)malloc(checksum);
+		memset(temp,0,checksum);
+		memcpy(temp,(char *)segment,checksum);
+	}
+	else
+	{
+		char *temp = (char *)malloc(checksum);
+		memset(temp,0,checksum);
+		memcpy(temp,(char *)segment,checksum);
+	}
+	*/
+	unsigned long cksum=0;
+	while(checksum>1)
+	{
+	cksum+=*(unsigned short int *)segment++;
+	checksum-=sizeof(unsigned short int);
+	}
+	if(checksum)
+	{
+	cksum+=*(char *)segment;
+	}
+	while (cksum>>16)
+		cksum=(cksum>>16)+(cksum & 0xffff);
+	return (unsigned short int)(~cksum);
 }
 
 //这个函数检查段中的校验和, 正确时返回1, 错误时返回-1
 int checkchecksum(seg_t* segment)
 {
-  return 0;
+		int checksum = sizeof(stcp_hdr_t) + strlen(segment->data);
+	
+	/*if(((int)checksum/2 )* 2 != checksum)
+	{
+		checksum++;
+		char *temp = (char *)malloc(checksum);
+		memset(temp,0,checksum);
+		memcpy(temp,(char *)segment,checksum);
+	}
+	else
+	{
+		char *temp = (char *)malloc(checksum);
+		memset(temp,0,checksum);
+		memcpy(temp,(char *)segment,checksum);
+	}
+	*/
+	unsigned long cksum=0;
+	while(checksum>1)
+	{
+	cksum+=*(unsigned short int *)segment++;
+	checksum-=sizeof(unsigned short int);
+	}
+	if(checksum)
+	{
+	cksum+=*(char *)segment;
+	}
+	while (cksum>>16)
+		cksum=(cksum>>16)+(cksum & 0xffff);
+  	if( (unsigned short)(~cksum) != 0 )
+	{
+		// TODO:
+		printf("check sum error!\n");
+
+		return -1;
+		//return 0;
+	}
+	else
+	{
+		return 0;
+	}
 }

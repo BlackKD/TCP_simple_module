@@ -17,7 +17,7 @@
 #define	LISTENING 2
 #define	CONNECTED 3
 #define	CLOSEWAIT 4
-
+int connfd;
 //服务器传输控制块. 一个STCP连接的服务器端使用这个数据结构记录连接信息.
 typedef struct server_tcb {
 	unsigned int server_nodeID;     //服务器节点ID, 类似IP地址, 当前未使用
@@ -31,6 +31,8 @@ typedef struct server_tcb {
 	pthread_mutex_t* bufMutex;      //指向一个互斥量的指针, 该互斥量用于对接收缓冲区的访问
 } server_tcb_t;
 
+server_tcb_t *TCBtable[MAX_TRANSPORT_CONNECTIONS];
+pthread_mutex_t gl_mutex[MAX_TRANSPORT_CONNECTIONS];
 //
 //  用于服务器端应用程序的STCP套接字API. 
 //  ===================================

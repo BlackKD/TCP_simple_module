@@ -1,5 +1,9 @@
 // 文件名: seg.h
-
+#include <stdlib.h>
+#include <sys/socket.h>
+#include <stdio.h>
+#include <time.h>
+#include <pthread.h>
 // 描述: 这个文件包含STCP段定义, 以及用于发送和接收STCP段的接口sip_sendseg() and sip_rcvseg(), 及其支持函数的原型. 
 //
 // 创建日期: 2015年
@@ -38,6 +42,36 @@ typedef struct segment {
 	char data[MAX_SEG_LEN];
 } seg_t;
 
+
+static inline void set_stcp_hdr(
+		stcp_hdr_t *p, 
+		unsigned sport, unsigned dport,
+		unsigned seqn, unsigned ackn, 
+		unsigned short len, unsigned short type, 
+		unsigned short rcv_win, unsigned short checksum
+) 
+{
+	if(p == NULL) {
+		printf("set_stcp_hdr error, p is NULL.\n");
+		return;
+	}
+	p->src_port = sport;
+	p->dest_port = dport;
+	p->seq_num = seqn;
+	p->ack_num = ackn;
+	p->length = len;
+	p->type = type;
+	p->rcv_win = rcv_win;
+	p->checksum = checksum;
+}
+
+static inline void set_seg_data(seg_t *p, char *data) {
+	if( p != NULL) {
+		strncpy(p->data, data, MAX_SEG_LEN);
+	}
+	else
+		printf("set_seg_data error, p is NULL.\n");
+}
 //
 //  客户端和服务器的SIP API 
 //  =======================================
