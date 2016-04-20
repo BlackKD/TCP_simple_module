@@ -32,17 +32,37 @@
 //在发送字符串后, 等待5秒, 然后关闭连接
 #define WAITTIME 5
 
+#define SERV_ADDR "114.212.190.188"
+#define SERV_PORT 9009
 //这个函数通过在客户和服务器之间创建TCP连接来启动重叠网络层. 它返回TCP套接字描述符, STCP将使用该描述符发送段. 如果TCP连接失败, 返回-1.
 int son_start() {
+	struct sockaddr_in servaddr;
+	int sockfd = socket(AF_INET, SOCK_STREAM, 0); //AF_INET for ipv4; SOCK_STREAM for byte stream
+	if(sockfd < 0) {
+		printf("Socket error!\n");
+		return 0;
+	}
+	memset(&servaddr, 0, sizeof(struct sockaddr_in));
+	servaddr.sin_family = AF_INET;
+	servaddr.sin_addr.s_addr = inet_addr(SERV_ADDR);
+	servaddr.sin_port = htons(SERV_PORT);
+	//connect to the server
+	if(connect(sockfd, (struct sockaddr* )&servaddr, sizeof(servaddr)) < 0) {//创建套接字连接服务器
+		printf("Link Wrong!\n");
+		exit(1);
+	}
+	else
+		printf("Link Success!\n");
+	
+	return sockfd;
 
-  //你需要编写这里的代码.
 
 }
 
 //这个函数通过关闭客户和服务器之间的TCP连接来停止重叠网络层
 void son_stop(int son_conn) {
-
-  //你需要编写这里的代码.
+	close(son_conn);
+	printf("son_stop\n");
 
 }
 
@@ -103,11 +123,9 @@ int main() {
 
 	if(stcp_client_disconnect(sockfd)<0) {
 		printf("fail to disconnect from stcp server\n");
-		exit(1);
 	}
 	if(stcp_client_close(sockfd)<0) {
 		printf("fail to close stcp client\n");
-		exit(1);
 	}
 	
 	if(stcp_client_disconnect(sockfd2)<0) {
