@@ -113,14 +113,15 @@ int sip_recvseg(int connection, seg_t* segPtr)
                     recv(connection,&temp2,sizeof(char),0);
                     if(temp2 == '#')
                     { 
-                       if(seglost())
+                       
+                        printf("receive one packet!\n");
+                        memcpy(segPtr,buffer,sizeof(seg_t));
+					if(seglost(segPtr))
+
                         {
                             printf("lose packet!\n");
                             return 1;
-                        } 
-                        printf("receive one packet!\n");
-                        memcpy(segPtr,buffer,sizeof(seg_t));
-						
+                        } 	
 						//if(segPtr->header.checksum != checkchecksum(segPtr))
 							//return 1;
 						
