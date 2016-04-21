@@ -321,7 +321,7 @@ int sendData(client_tcb_t *tcb, segBuf_t *sb) {
 	if(tcb == NULL || sb == NULL) return 0;
 
 	if(tcb->unAck_segNum < GBN_WINDOW) { // send it
-		printf("send the DATA directly and ");
+		printf("send the DATA directly the seq_num: %d: and ", sb->seg.header.seq_num);
 		if( !sendseg(connfd, tcb, &(sb->seg)) ) {
 			printf("Send a DATA failed.\n");
 			return 0;
@@ -559,7 +559,7 @@ int stcp_client_send(int sockfd, void* data, unsigned int length)
 		printf("Send Data seq_num: %d\n", seq_num);
 		// copy data
 		int i;
-		int cur_send_len = (rest_len >= MAX_SEG_LEN) ? MAX_SEG_LEN : rest_len;
+		int cur_send_len = (rest_len >= MAX_SEG_LEN - 1) ? MAX_SEG_LEN - 1 : rest_len;
 		printf("rest length: %d\n", rest_len);
 		for(i = 0; i < cur_send_len; i ++) {
 			(seg->data)[i] = *(data_begin ++);
