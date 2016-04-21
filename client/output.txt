@@ -1,0 +1,1610 @@
+Link Success!
+stcp_client_sock.
+stcp_client_connect
+
+wait_syn_ack
+36 38 88 0 0 0 87 0 0 0 0 0 0 0 2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 35 receive one packet!
+handle_synack
+port 87 state to CONNECTED
+0 0 0 0 client connected to server, client port:87, server port 88
+0 0 0 0 0 0 0 0 stcp_client_send
+Send Data seq_num: 2
+rest length: 4
+sendData send the DATA directly the seq_num: 2: and 
+add2notackedBuf
+36 38 88 0 0 0 87 0 0 0 0 0 0 0 3 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 35 receive one packet!
+handle_dataack, the acked_num is: 3
+sockfd:0, Remove the unacked seq_num: 2, the received acked_num: 3
+send the unsent segs, if any
+0 0 0 0 0 0 0 0 0 0 0 0 over and return
+stcp_client_send
+Send Data seq_num: 3
+rest length: 958461
+sendData send the DATA directly the seq_num: 3: and 
+add2notackedBuf
+Send Data seq_num: 4
+rest length: 956998
+sendData send the DATA directly the seq_num: 4: and 
+add2notackedBuf
+Send Data seq_num: 5
+rest length: 955535
+sendData send the DATA directly the seq_num: 5: and 
+add2notackedBuf
+Send Data seq_num: 6
+rest length: 954072
+sendData send the DATA directly the seq_num: 6: and 
+add2notackedBuf
+Send Data seq_num: 7
+rest length: 952609
+sendData send the DATA directly the seq_num: 7: and 
+add2notackedBuf
+Send Data seq_num: 8
+rest length: 951146
+sendData send the DATA directly the seq_num: 8: and 
+add2notackedBuf
+Send Data seq_num: 9
+rest length: 949683
+sendData send the DATA directly the seq_num: 9: and 
+add2notackedBuf
+Send Data seq_num: 10
+rest length: 948220
+sendData send the DATA directly the seq_num: 10: and 
+add2notackedBuf
+Send Data seq_num: 11
+rest length: 946757
+sendData send the DATA directly the seq_num: 11: and 
+add2notackedBuf
+Send Data seq_num: 12
+rest length: 945294
+sendData send the DATA directly the seq_num: 12: and 
+add2notackedBuf
+Send Data seq_num: 13
+rest length: 943831
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 14
+rest length: 942368
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 15
+rest length: 940905
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 16
+rest length: 939442
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 17
+rest length: 937979
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 18
+rest length: 936516
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 19
+rest length: 935053
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 20
+rest length: 933590
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 21
+rest length: 932127
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 22
+rest length: 930664
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 23
+rest length: 929201
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 24
+rest length: 927738
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 25
+rest length: 926275
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 26
+rest length: 924812
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 27
+rest length: 923349
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 28
+rest length: 921886
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 29
+rest length: 920423
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 30
+rest length: 918960
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 31
+rest length: 917497
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 32
+rest length: 916034
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 33
+rest length: 914571
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 34
+rest length: 913108
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 35
+rest length: 911645
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 36
+rest length: 910182
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 37
+rest length: 908719
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 38
+rest length: 907256
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 39
+rest length: 905793
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 40
+rest length: 904330
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 41
+rest length: 902867
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 42
+rest length: 901404
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 43
+rest length: 899941
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 44
+rest length: 898478
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 45
+rest length: 897015
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 46
+rest length: 895552
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 47
+rest length: 894089
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 48
+rest length: 892626
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 49
+rest length: 891163
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 50
+rest length: 889700
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 51
+rest length: 888237
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 52
+rest length: 886774
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 53
+rest length: 885311
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 54
+rest length: 883848
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 55
+rest length: 882385
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 56
+rest length: 880922
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 57
+rest length: 879459
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 58
+rest length: 877996
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 59
+rest length: 876533
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 60
+rest length: 875070
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 61
+rest length: 873607
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 62
+rest length: 872144
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 63
+rest length: 870681
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 64
+rest length: 869218
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 65
+rest length: 867755
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 66
+rest length: 866292
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 67
+rest length: 864829
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 68
+rest length: 863366
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 69
+rest length: 861903
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 70
+rest length: 860440
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 71
+rest length: 858977
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 72
+rest length: 857514
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 73
+rest length: 856051
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 74
+rest length: 854588
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 75
+rest length: 853125
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 76
+rest length: 851662
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 77
+rest length: 850199
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 78
+rest length: 848736
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 79
+rest length: 847273
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 80
+rest length: 845810
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 81
+rest length: 844347
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 82
+rest length: 842884
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 83
+rest length: 841421
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 84
+rest length: 839958
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 85
+rest length: 838495
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 86
+rest length: 837032
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 87
+rest length: 835569
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 88
+rest length: 834106
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 89
+rest length: 832643
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 90
+rest length: 831180
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 91
+rest length: 829717
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 92
+rest length: 828254
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 93
+rest length: 826791
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 94
+rest length: 825328
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 95
+rest length: 823865
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 96
+rest length: 822402
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 97
+rest length: 820939
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 98
+rest length: 819476
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 99
+rest length: 818013
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 100
+rest length: 816550
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 101
+rest length: 815087
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 102
+rest length: 813624
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 103
+rest length: 812161
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 104
+rest length: 810698
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 105
+rest length: 809235
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 106
+rest length: 807772
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 107
+rest length: 806309
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 108
+rest length: 804846
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 109
+rest length: 803383
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 110
+rest length: 801920
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 111
+rest length: 800457
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 112
+rest length: 798994
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 113
+rest length: 797531
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 114
+rest length: 796068
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 115
+rest length: 794605
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 116
+rest length: 793142
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 117
+rest length: 791679
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 118
+rest length: 790216
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 119
+rest length: 788753
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 120
+rest length: 787290
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 121
+rest length: 785827
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 122
+rest length: 784364
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 123
+rest length: 782901
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 124
+rest length: 781438
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 125
+rest length: 779975
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 126
+rest length: 778512
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 127
+rest length: 777049
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 128
+rest length: 775586
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 129
+rest length: 774123
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 130
+rest length: 772660
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 131
+rest length: 771197
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 132
+rest length: 769734
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 133
+rest length: 768271
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 134
+rest length: 766808
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 135
+rest length: 765345
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 136
+rest length: 763882
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 137
+rest length: 762419
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 138
+rest length: 760956
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 139
+rest length: 759493
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 140
+rest length: 758030
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 141
+rest length: 756567
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 142
+rest length: 755104
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 143
+rest length: 753641
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 144
+rest length: 752178
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 145
+rest length: 750715
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 146
+rest length: 749252
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 147
+rest length: 747789
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 148
+rest length: 746326
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 149
+rest length: 744863
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 150
+rest length: 743400
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 151
+rest length: 741937
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 152
+rest length: 740474
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 153
+rest length: 739011
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 154
+rest length: 737548
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 155
+rest length: 736085
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 156
+rest length: 734622
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 157
+rest length: 733159
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 158
+rest length: 731696
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 159
+rest length: 730233
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 160
+rest length: 728770
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 161
+rest length: 727307
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 162
+rest length: 725844
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 163
+rest length: 724381
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 164
+rest length: 722918
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 165
+rest length: 721455
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 166
+rest length: 719992
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 167
+rest length: 718529
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 168
+rest length: 717066
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 169
+rest length: 715603
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 170
+rest length: 714140
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 171
+rest length: 712677
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 172
+rest length: 711214
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 173
+rest length: 709751
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 174
+rest length: 708288
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 175
+rest length: 706825
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 176
+rest length: 705362
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+36 Send Data seq_num: 177
+rest length: 703899
+38 88 0 0 0 sendData 87 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 178
+rest length: 702436
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+4 Send Data seq_num: 179
+rest length: 700973
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 5 Send Data seq_num: 180
+0 rest length: 699510
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 181
+rest length: 698047
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 182
+rest length: 696584
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 183
+rest length: 695121
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 184
+0 rest length: 693658
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 185
+0 rest length: 692195
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 186
+rest length: 690732
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 187
+0 rest length: 689269
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 188
+rest length: 687806
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 189
+0 rest length: 686343
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 190
+rest length: 684880
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 Send Data seq_num: 191
+rest length: 683417
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 192
+0 rest length: 681954
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 193
+rest length: 680491
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 194
+rest length: 679028
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 195
+rest length: 677565
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 196
+rest length: 676102
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 197
+0 0 0 0 0 0 0 0 rest length: 674639
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 198
+rest length: 673176
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 199
+0 rest length: 671713
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 200
+rest length: 670250
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 201
+rest length: 668787
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 202
+0 rest length: 667324
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 203
+0 rest length: 665861
+0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 204
+0 rest length: 664398
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 205
+0 0 0 0 0 0 0 0 rest length: 662935
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 206
+rest length: 661472
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 207
+rest length: 660009
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 208
+rest length: 658546
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 209
+rest length: 657083
+0 0 0 0 0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 210
+rest length: 655620
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 211
+0 rest length: 654157
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 212
+rest length: 652694
+0 0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 213
+0 rest length: 651231
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 214
+0 0 0 0 0 0 0 0 rest length: 649768
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 215
+rest length: 648305
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 216
+0 rest length: 646842
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 217
+0 rest length: 645379
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 218
+rest length: 643916
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 219
+rest length: 642453
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 220
+rest length: 640990
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 221
+rest length: 639527
+0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 222
+0 rest length: 638064
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 223
+rest length: 636601
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 224
+0 rest length: 635138
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 Send Data seq_num: 225
+rest length: 633675
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 226
+0 rest length: 632212
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 227
+rest length: 630749
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 Send Data seq_num: 228
+rest length: 629286
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 229
+rest length: 627823
+0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 230
+rest length: 626360
+0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 231
+0 0 0 0 0 0 0 0 rest length: 624897
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 232
+rest length: 623434
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 233
+0 rest length: 621971
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 234
+rest length: 620508
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 235
+rest length: 619045
+0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 236
+rest length: 617582
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 237
+0 rest length: 616119
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 Send Data seq_num: 238
+0 rest length: 614656
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 239
+rest length: 613193
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 240
+0 rest length: 611730
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 241
+rest length: 610267
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 242
+rest length: 608804
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 243
+0 rest length: 607341
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 244
+0 rest length: 605878
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 245
+rest length: 604415
+0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 246
+rest length: 602952
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 247
+0 rest length: 601489
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 248
+0 rest length: 600026
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 249
+0 rest length: 598563
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 250
+rest length: 597100
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 251
+0 rest length: 595637
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 252
+rest length: 594174
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 253
+0 0 0 0 0 rest length: 592711
+0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 254
+rest length: 591248
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 255
+rest length: 589785
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 256
+rest length: 588322
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 257
+rest length: 586859
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 258
+0 rest length: 585396
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 259
+rest length: 583933
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 260
+rest length: 582470
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 261
+rest length: 581007
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 262
+rest length: 579544
+0 sendData 0 0 0 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 263
+rest length: 578081
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 264
+rest length: 576618
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 265
+rest length: 575155
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 Send Data seq_num: 266
+0 rest length: 573692
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 267
+rest length: 572229
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 268
+rest length: 570766
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 Send Data seq_num: 269
+0 rest length: 569303
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 270
+rest length: 567840
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 271
+rest length: 566377
+0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 272
+rest length: 564914
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 Send Data seq_num: 273
+0 rest length: 563451
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 274
+rest length: 561988
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 275
+rest length: 560525
+0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 276
+rest length: 559062
+0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 277
+rest length: 557599
+0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 278
+rest length: 556136
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 279
+rest length: 554673
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 Send Data seq_num: 280
+0 0 0 0 0 rest length: 553210
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 281
+rest length: 551747
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 282
+0 rest length: 550284
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 283
+0 0 0 0 0 rest length: 548821
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 284
+rest length: 547358
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 285
+rest length: 545895
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 286
+rest length: 544432
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 287
+0 rest length: 542969
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 288
+0 rest length: 541506
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 289
+rest length: 540043
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 290
+rest length: 538580
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 291
+rest length: 537117
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 292
+0 rest length: 535654
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 293
+rest length: 534191
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 294
+rest length: 532728
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 295
+0 0 0 0 rest length: 531265
+0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 296
+0 rest length: 529802
+0 0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 297
+0 rest length: 528339
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 298
+0 rest length: 526876
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 299
+rest length: 525413
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 300
+rest length: 523950
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 301
+0 0 0 0 0 rest length: 522487
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 302
+rest length: 521024
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 303
+0 rest length: 519561
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 304
+rest length: 518098
+0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 305
+0 rest length: 516635
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 306
+rest length: 515172
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 307
+rest length: 513709
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 Send Data seq_num: 308
+rest length: 512246
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 309
+rest length: 510783
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 310
+0 rest length: 509320
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 311
+0 rest length: 507857
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 312
+rest length: 506394
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 313
+0 rest length: 504931
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 314
+0 rest length: 503468
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 315
+rest length: 502005
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 316
+rest length: 500542
+0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 317
+0 rest length: 499079
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 318
+rest length: 497616
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 319
+rest length: 496153
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 320
+rest length: 494690
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 321
+rest length: 493227
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 322
+0 rest length: 491764
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 323
+rest length: 490301
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 324
+rest length: 488838
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 325
+rest length: 487375
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 326
+rest length: 485912
+0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 327
+rest length: 484449
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 328
+rest length: 482986
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 329
+rest length: 481523
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 330
+rest length: 480060
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 331
+rest length: 478597
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 332
+0 rest length: 477134
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 333
+rest length: 475671
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 334
+0 rest length: 474208
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 335
+rest length: 472745
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 336
+rest length: 471282
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 337
+0 rest length: 469819
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 338
+rest length: 468356
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 Send Data seq_num: 339
+0 rest length: 466893
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 340
+rest length: 465430
+0 0 0 0 0 0 0 0 0 0 sendData 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 341
+0 rest length: 463967
+0 0 0 0 0 0 0 sendData 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 Send Data seq_num: 342
+0 rest length: 462504
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 343
+rest length: 461041
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 344
+0 rest length: 459578
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 345
+rest length: 458115
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 346
+0 rest length: 456652
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 347
+rest length: 455189
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 348
+rest length: 453726
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 349
+0 rest length: 452263
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 350
+rest length: 450800
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 351
+0 rest length: 449337
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 36 35 receive one packet!
+handle_dataack, the acked_num is: 4
+sockfd:0, Remove the unacked seq_num: 3, the received acked_num: 4
+Send Data seq_num: 352
+send the unsent segs, if any
+sending an unsent seg, seq_num: 13
+rest length: 447874
+sendData send the DATA directly the seq_num: 13: and 
+add2notackedBuf
+0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 353
+0 rest length: 446411
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+36 Send Data seq_num: 354
+rest length: 444948
+38 88 0 0 0 87 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 355
+rest length: 443485
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 356
+0 rest length: 442022
+5 0 0 0 0 0 5 0 0 0 sendData 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 357
+0 rest length: 440559
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 358
+rest length: 439096
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 Send Data seq_num: 359
+rest length: 437633
+0 0 0 0 0 0 0 sendData 0 0 0 0 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 360
+0 rest length: 436170
+0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 361
+rest length: 434707
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 362
+rest length: 433244
+0 0 0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 363
+rest length: 431781
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 364
+0 rest length: 430318
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 365
+rest length: 428855
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 366
+rest length: 427392
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 367
+rest length: 425929
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 368
+0 rest length: 424466
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 369
+rest length: 423003
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 370
+0 rest length: 421540
+0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 371
+rest length: 420077
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 372
+rest length: 418614
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 373
+rest length: 417151
+0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 374
+rest length: 415688
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 375
+rest length: 414225
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 376
+rest length: 412762
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 377
+0 0 0 0 0 rest length: 411299
+0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 378
+0 0 0 0 0 0 rest length: 409836
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 379
+0 rest length: 408373
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 Send Data seq_num: 380
+0 rest length: 406910
+0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 381
+rest length: 405447
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 382
+rest length: 403984
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 383
+0 rest length: 402521
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 384
+0 rest length: 401058
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 385
+rest length: 399595
+0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 386
+rest length: 398132
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 387
+rest length: 396669
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 388
+0 rest length: 395206
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 389
+rest length: 393743
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 390
+rest length: 392280
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 391
+rest length: 390817
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 392
+0 rest length: 389354
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 393
+0 rest length: 387891
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 394
+rest length: 386428
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 395
+0 0 0 0 0 rest length: 384965
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 396
+0 rest length: 383502
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 397
+rest length: 382039
+0 0 0 0 0 0 0 sendData 0 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 398
+0 rest length: 380576
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 399
+0 rest length: 379113
+0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 0 Send Data seq_num: 400
+0 rest length: 377650
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 401
+rest length: 376187
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 402
+rest length: 374724
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 403
+rest length: 373261
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 404
+rest length: 371798
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 405
+0 rest length: 370335
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 406
+rest length: 368872
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 407
+0 rest length: 367409
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 408
+rest length: 365946
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 409
+rest length: 364483
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 410
+rest length: 363020
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 411
+0 rest length: 361557
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 412
+rest length: 360094
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 413
+rest length: 358631
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 Send Data seq_num: 414
+rest length: 357168
+0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 415
+rest length: 355705
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 416
+rest length: 354242
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 417
+rest length: 352779
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 418
+0 rest length: 351316
+0 0 0 0 0 0 0 0 0 0 sendData 0 0 0 0 0 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 419
+0 rest length: 349853
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 420
+0 rest length: 348390
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 421
+0 rest length: 346927
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 422
+0 rest length: 345464
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 423
+rest length: 344001
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 424
+rest length: 342538
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 425
+0 rest length: 341075
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 426
+rest length: 339612
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 427
+0 0 0 0 0 0 0 0 0 0 rest length: 338149
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 428
+rest length: 336686
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 429
+rest length: 335223
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 430
+0 rest length: 333760
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 431
+rest length: 332297
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 432
+rest length: 330834
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 433
+rest length: 329371
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 434
+rest length: 327908
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 0 Send Data seq_num: 435
+0 rest length: 326445
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 436
+rest length: 324982
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 437
+0 rest length: 323519
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 438
+0 0 0 0 0 0 0 0 0 0 rest length: 322056
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 439
+rest length: 320593
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 440
+rest length: 319130
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 441
+rest length: 317667
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 442
+rest length: 316204
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 443
+rest length: 314741
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 444
+rest length: 313278
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 445
+0 rest length: 311815
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 446
+rest length: 310352
+0 0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 447
+rest length: 308889
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 448
+0 0 0 0 0 0 0 0 0 0 rest length: 307426
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 449
+rest length: 305963
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 450
+0 rest length: 304500
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 451
+rest length: 303037
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 452
+rest length: 301574
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 453
+0 0 rest length: 300111
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 454
+rest length: 298648
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 455
+0 0 0 0 0 0 0 0 0 0 rest length: 297185
+0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 Send Data seq_num: 456
+0 rest length: 295722
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 457
+rest length: 294259
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 458
+rest length: 292796
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 459
+0 rest length: 291333
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 460
+rest length: 289870
+0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 461
+0 rest length: 288407
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 462
+rest length: 286944
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 463
+rest length: 285481
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 464
+0 rest length: 284018
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 465
+rest length: 282555
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 466
+rest length: 281092
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 467
+rest length: 279629
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 468
+0 rest length: 278166
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 469
+0 rest length: 276703
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 470
+rest length: 275240
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 471
+0 rest length: 273777
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 472
+0 0 0 0 0 0 0 0 0 0 rest length: 272314
+0 0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 473
+rest length: 270851
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 474
+rest length: 269388
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 475
+0 rest length: 267925
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 476
+rest length: 266462
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 477
+0 rest length: 264999
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 478
+rest length: 263536
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 479
+0 rest length: 262073
+0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 480
+rest length: 260610
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 481
+rest length: 259147
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 482
+rest length: 257684
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 483
+0 rest length: 256221
+0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 484
+rest length: 254758
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 Send Data seq_num: 485
+rest length: 253295
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 486
+0 rest length: 251832
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 487
+rest length: 250369
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 488
+rest length: 248906
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 489
+0 rest length: 247443
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 490
+0 rest length: 245980
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 491
+rest length: 244517
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 492
+rest length: 243054
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 Send Data seq_num: 493
+rest length: 241591
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 494
+rest length: 240128
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 495
+rest length: 238665
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 496
+rest length: 237202
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 497
+0 0 rest length: 235739
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 498
+rest length: 234276
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 499
+0 rest length: 232813
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 500
+rest length: 231350
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 501
+0 rest length: 229887
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 Send Data seq_num: 502
+rest length: 228424
+0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 Send Data seq_num: 503
+0 rest length: 226961
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 504
+0 rest length: 225498
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 Send Data seq_num: 505
+0 rest length: 224035
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 506
+rest length: 222572
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 507
+0 rest length: 221109
+0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 508
+rest length: 219646
+0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 509
+rest length: 218183
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 510
+rest length: 216720
+0 0 0 0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 0 Send Data seq_num: 511
+0 rest length: 215257
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 512
+rest length: 213794
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 513
+rest length: 212331
+0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 Send Data seq_num: 514
+rest length: 210868
+0 0 0 0 0 0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 515
+0 rest length: 209405
+0 0 0 0 0 0 0 sendData 0 0 0 0 0 notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 516
+rest length: 207942
+0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 0 0 0 0 0 Send Data seq_num: 517
+rest length: 206479
+0 sendData 0 notAcked buffer is full and add the segBuf to unsent buffer
+0 0 0 0 Send Data seq_num: 518
+0 rest length: 205016
+0 0 0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 519
+0 rest length: 203553
+36 35 receive one packet!
+handle_dataack, the acked_num is: 5
+sockfd:0, Remove the unacked seq_num: 4, the received acked_num: 5
+send the unsent segs, if any
+sending an unsent seg, seq_num: 12
+sendData send the DATA directly the seq_num: 12: and 
+add2notackedBuf
+0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+0 0 Send Data seq_num: 520
+0 rest length: 202090
+0 0 0 0 0 sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 521
+rest length: 200627
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 522
+rest length: 199164
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 523
+rest length: 197701
+sendData notAcked buffer is full and add the segBuf to unsent buffer
+Send Data seq_num: 524
+rest length: 196238
+36 38 88 0 0 0 87 0 0 0 0 0 0 0 6 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

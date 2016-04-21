@@ -89,11 +89,11 @@ int sip_recvseg(int connection, seg_t* segPtr)
     {	
         char temp = 0;
         recv(connection,&temp,sizeof(char),0);
-		printf("%d ",temp);
+//		printf("%d ",temp);
         if(temp=='$')
         {
                 recv(connection,&temp,sizeof(char),0);
-				printf("%d ",temp);
+//				printf("%d ",temp);
                 if(temp == '&')
                 {
                     char buffer[1504];
@@ -104,7 +104,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
 					for(k = 0;k < 24;k++)
 					{
 						recv(connection,&temp2,sizeof(char),0);
-						printf("%d ",temp2);
+//						printf("%d ",temp2);
 						buffer[i] = temp2;
 						i++;
 					}
@@ -113,7 +113,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
                     while(temp2!='$')
                     {
                         recv(connection,&temp2,sizeof(char),0);
-						printf("%d ",temp2);
+//						printf("%d ",temp2);
                         if(temp2!='$'&&i<1504)
                         {
                             buffer[i] = temp2;
@@ -129,7 +129,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
                         } 
                     }
                     recv(connection,&temp2,sizeof(char),0);
-					printf("%d ",temp2);
+//					printf("%d ",temp2);
                     if(temp2 == '#')
                     { 
                        

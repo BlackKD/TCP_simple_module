@@ -58,8 +58,7 @@ int sendseg(int conn, client_tcb_t *p, seg_t *segPtr) {
 	// send the segment
 	if( segPtr->header.seq_num == 13 )
    {
-	   
-	   while(1);
+	   //while(1);
    }
 	if( !sip_sendseg(conn, segPtr) )
 		return 0;
@@ -227,6 +226,9 @@ int sendUnsent(client_tcb_t *tcb) {
 			unsentHead = unsentHead->next;
 			tcb->sendBufunSent = unsentHead;
 		}
+		// if the window is full, stop
+		if( tcb->unAck_segNum >= GBN_WINDOW )
+			break;
 	}
 	return 0;
 }
@@ -245,6 +247,7 @@ void handle_dataack(seg_t *p) {
 	// ack the unacked
 	segBuf_t *cur = tcb->sendBufHead;
 	segBuf_t *last = NULL;
+
 	while(cur != NULL) {
 		// check whether the current node is the first node to be removed 
 		if ((cur->seg).header.seq_num < p->header.ack_num) {
@@ -373,6 +376,7 @@ void retransmitData(client_tcb_t *tcb, segBuf_t *cur) {
 	// send it, and
 	// the case that unAcked buffer is full will not appear here,
 	// so the tcb->sendBufHead will not be changed by sendDat
+	printf("retransmiting: ");
 	sendData(tcb, cur);
 }
 
@@ -394,7 +398,6 @@ void *checkDataTimeout(void *arg) {
 				// if newest unAcked seg timeout, retransmit all the unacked
 				// else add all the unscked segs' sentTime
 				if(sb->sentTime >= DATA_TIMEOUT) {
-					printf("retransmitting Data\n");
 					retransmitData(tcb, tcb->sendBufHead);
 				}
 				else 
@@ -584,7 +587,6 @@ int stcp_client_send(int sockfd, void* data, unsigned int length)
 	
 	do {
 		pthread_mutex_lock(p->bufMutex);
-		printf("check if over\n");
 	    if( p->sendBufHead == NULL && p->sendBufunSent == NULL ) {
 			pthread_mutex_unlock(p->bufMutex);
 			printf("over and return\n");
