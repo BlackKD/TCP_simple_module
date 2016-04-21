@@ -42,11 +42,11 @@ int sip_sendseg(int connection, seg_t* segPtr)
 		buffer[2+j] = ((char*)(segPtr))[j];
     buffer[2+j] = '$';
     buffer[j+3] = '#';
-	int i = 0;
-	for(i = 0 ; i < 1504;i++)
-	{
-		printf("%d ",buffer[i]);
-	}
+	//int i = 0;
+	//for(i = 0 ; i < 1504;i++)
+	//{
+	//	printf("%d ",buffer[i]);
+//	}
 	printf("\n");
     if(send(connection,buffer,sizeof(buffer),0)<=0)
     {
@@ -87,24 +87,38 @@ int sip_recvseg(int connection, seg_t* segPtr)
    int finish = 1;
     while(finish)
     {	
-        char temp;
+        char temp = 0;
         recv(connection,&temp,sizeof(char),0);
+		printf("%d ",temp);
         if(temp=='$')
         {
                 recv(connection,&temp,sizeof(char),0);
+				printf("%d ",temp);
                 if(temp == '&')
                 {
                     char buffer[1504];
                     memset(&buffer,0,1504);
-                    char temp2 = 0;
-                    int i = 0;
+					char temp2 = 0;
+					int k = 0;
+					int i = 0;
+					for(k = 0;k < 24;k++)
+					{
+						recv(connection,&temp2,sizeof(char),0);
+						printf("%d ",temp2);
+						buffer[i] = temp2;
+						i++;
+					}
+                    
+                    
                     while(temp2!='$')
                     {
                         recv(connection,&temp2,sizeof(char),0);
+						printf("%d ",temp2);
                         if(temp2!='$'&&i<1504)
                         {
                             buffer[i] = temp2;
                             i++;
+							
                         } 
                         else
                         {
@@ -115,6 +129,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
                         } 
                     }
                     recv(connection,&temp2,sizeof(char),0);
+					printf("%d ",temp2);
                     if(temp2 == '#')
                     { 
                        
@@ -133,13 +148,15 @@ int sip_recvseg(int connection, seg_t* segPtr)
                     }
                     else
                     {
-                        printf("no nomal '#' in tail\n");
+                        printf("\nno nomal '#' in tail\n");
+						sleep(10);
                         //return 0;
                         
                     } 
                 }
                 else{
-                    printf("no nomal '&' in head\n");
+                    printf("\nno nomal '&' in head\n");
+					sleep(10);
                     //return 0;
                 } 
         }
