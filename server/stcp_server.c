@@ -118,19 +118,20 @@ int stcp_server_accept(int sockfd)
 int stcp_server_recv(int sockfd, void* buf, unsigned int length)
 {
 	int i = sockfd;
+	void * mybuf = buf;
 	while(1)
 	{
-	printf("recv i:%d\n",i);
+	//printf("recv i:%d\n",i);
 	if(TCBtable[i]!=NULL)
 	{
-	printf("BUFlen: %d, length:%d\n",TCBtable[i]->usedBufLen,length);
+	//printf("BUFlen: %d, length:%d\n",TCBtable[i]->usedBufLen,length);
 	pthread_mutex_lock(TCBtable[i]->bufMutex);
-	printf("BUFlen: %d, length:%d\n",TCBtable[i]->usedBufLen,length);
+	//printf("BUFlen: %d, length:%d\n",TCBtable[i]->usedBufLen,length);
 	if(TCBtable[i]->usedBufLen >= length)
 	{
 		//printf("%s\n",TCBtable[i]->recvBuf+length);
-		memcpy(buf,TCBtable[i]->recvBuf,length);
-		printf("%s\n",buf);
+		memcpy(mybuf,TCBtable[i]->recvBuf,length);
+		//printf("%s\n",buf);
 		TCBtable[i]->usedBufLen = TCBtable[i]->usedBufLen - length;
 		char * temp = (char *)malloc(RECEIVE_BUF_SIZE);
 		memset(temp,0,RECEIVE_BUF_SIZE);
@@ -144,6 +145,25 @@ int stcp_server_recv(int sockfd, void* buf, unsigned int length)
 		pthread_mutex_unlock(TCBtable[i]->bufMutex);
 		free(temp);
 		return 1;
+	}
+	else if(TCBtable[i]->usedBufLen!= 0)
+	{
+		memcpy(mybuf,TCBtable[i]->recvBuf,TCBtable[i]->usedBufLen);
+		mybuf = mybuf+TCBtable[i]->usedBufLen;
+		length = length - TCBtable[i]->usedBufLen;
+		TCBtable[i]->usedBufLen = 0;
+		TCBtable[i]->recvBuf = (char *)malloc(RECEIVE_BUF_SIZE);
+		memset(TCBtable[i]->recvBuf,0,RECEIVE_BUF_SIZE);
+		if(length == 0)
+		{
+			pthread_mutex_unlock(TCBtable[i]->bufMutex);
+			return 1;
+		}
+		else if(length < 0)
+		{
+			printf("too short need!n\n");
+		}
+		
 	}
 	pthread_mutex_unlock(TCBtable[i]->bufMutex);
 	}
@@ -294,7 +314,7 @@ void* seghandler(void* arg)
                 }break;
                 case DATA:
                 {
-					  printf("receive SYN \n");
+					  printf("receive DATA \n");
                     int dest_port = mytcpMessage->header.dest_port;
                     printf("dest port %d\n",dest_port);
                     int i = 0;
@@ -349,7 +369,7 @@ void* seghandler(void* arg)
                                 retcpMessage->header.type = DATAACK;
                                 sip_sendseg(connfd, retcpMessage);
                                // sip_sendseg(*(int *)arg, retcpMessage);
-                                printf("send old Dataack %d %d",i,TCBtable[i]->expect_seqNum);
+                                printf("send old Dataack %d need old packet%d\n",i,TCBtable[i]->expect_seqNum);
 								}
 								break;
 							}
