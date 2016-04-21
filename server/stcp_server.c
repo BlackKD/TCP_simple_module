@@ -72,6 +72,7 @@ int stcp_server_sock(unsigned int server_port)
 		TCBtable[i]->expect_seqNum = 0;
 		TCBtable[i]->usedBufLen = 0;
 		TCBtable[i]->recvBuf = (char *)malloc(RECEIVE_BUF_SIZE);
+		memset(TCBtable[i]->recvBuf,0,RECEIVE_BUF_SIZE);
         return i;
     }else
     {
@@ -116,31 +117,44 @@ int stcp_server_accept(int sockfd)
 //
 int stcp_server_recv(int sockfd, void* buf, unsigned int length)
 {
-	int i = socket;
+	int i = sockfd;
 	while(1)
 	{
-	pthread_mutex_lock(TCBtable[i]->bufMutex);
+	printf("recv i:%d\n",i);
 	if(TCBtable[i]!=NULL)
 	{
+	printf("BUFlen: %d, length:%d\n",TCBtable[i]->usedBufLen,length);
+	pthread_mutex_lock(TCBtable[i]->bufMutex);
+	printf("BUFlen: %d, length:%d\n",TCBtable[i]->usedBufLen,length);
 	if(TCBtable[i]->usedBufLen >= length)
 	{
+		//printf("%s\n",TCBtable[i]->recvBuf+length);
 		memcpy(buf,TCBtable[i]->recvBuf,length);
+		printf("%s\n",buf);
 		TCBtable[i]->usedBufLen = TCBtable[i]->usedBufLen - length;
 		char * temp = (char *)malloc(RECEIVE_BUF_SIZE);
+		memset(temp,0,RECEIVE_BUF_SIZE);
 		memcpy(temp,TCBtable[i]->recvBuf+length,TCBtable[i]->usedBufLen);
+		//printf("%s\n",temp);
+		//memset(TCBtable[i]->recvBuf,0,RECEIVE_BUF_SIZE);
+		//free(TCBtable[i]->recvBuf);
+		TCBtable[i]->recvBuf = (char *)malloc(RECEIVE_BUF_SIZE);
 		memset(TCBtable[i]->recvBuf,0,RECEIVE_BUF_SIZE);
 		memcpy(TCBtable[i]->recvBuf,temp,TCBtable[i]->usedBufLen);
+		pthread_mutex_unlock(TCBtable[i]->bufMutex);
 		free(temp);
 		return 1;
 	}
+	pthread_mutex_unlock(TCBtable[i]->bufMutex);
 	}
 	else
 	{
 		printf("mysocket has stopped!\n %d",i);
+		
 		return -1;
 	}
-	pthread_mutex_unlock(TCBtable[i]->bufMutex);
-	usleep(ACCEPT_POLLING_INTERVAL);
+	//pthread_mutex_unlock(TCBtable[i]->bufMutex);
+	usleep(ACCEPT_POLLING_INTERVAL/1000);
 	}
   return 0;
 }
@@ -267,7 +281,7 @@ void* seghandler(void* arg)
                                 //    sip_sendseg(*(int *)arg, retcpMessage);
                                // }
                                 TCBtable[i]->state = CLOSEWAIT;
-								TCBtable[i]->usedBufLen = 0;
+								//TCBtable[i]->usedBufLen = 0;
                                 pthread_mutex_unlock(TCBtable[i]->bufMutex);
 								break;
                             }
