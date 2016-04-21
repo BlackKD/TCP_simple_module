@@ -210,7 +210,7 @@ void handle_finack(seg_t *p) {
 }
 
 int sendUnsent(client_tcb_t *tcb) {
-	printf("send the unsent segs\n");
+	printf("send the unsent segs, if any\n");
 	if(tcb == NULL) return 0;
 
 	segBuf_t *unsentHead = tcb->sendBufunSent;
@@ -273,6 +273,7 @@ segBuf_t *create_sbuf() {
  * On error, 0 will be returned.
  */
 int add2notackedBuf(client_tcb_t *tcb, segBuf_t *sb) {
+	printf("add2notackedBuf\n");
 	if(tcb == NULL || sb == NULL) return 0;
 
 	segBuf_t *head = tcb->sendBufHead;
@@ -284,6 +285,7 @@ int add2notackedBuf(client_tcb_t *tcb, segBuf_t *sb) {
 		sb->next = head;
 		tcb->sendBufHead = sb;
 	}
+	tcb->unAck_segNum ++;
 
 	return 1;
 }
@@ -354,10 +356,15 @@ void *checkDataTimeout(void *arg) {
 	while(1) {
 		for(i = 0; i < TABLE_LEN; i ++) {
 			client_tcb_t *tcb = ctcb_table[i];
-			if(tcb != NULL) {
+			if(tcb != NULL  && tcb->bufMutex != NULL) {
 				pthread_mutex_lock(tcb->bufMutex);
 			
 				segBuf_t *sb = tcb->sendBufHead;
+				if(sb == NULL) {
+					pthread_mutex_unlock(tcb->bufMutex);
+					continue;
+				}
+
 				sb->sentTime += SENDBUF_POLLING_INTERVAL;
 				// if newest unAcked seg timeout, retransmit all the unacked
 				// else add all the unscked segs' sentTime
@@ -513,6 +520,7 @@ int stcp_client_connect(int sockfd, unsigned int server_port) {
 //
 int stcp_client_send(int sockfd, void* data, unsigned int length)
 {
+	printf("stcp_client_send\n");
 	segBuf_t *sb = create_sbuf();
 	if(sb == NULL) 
 		return -1;
@@ -523,9 +531,10 @@ int stcp_client_send(int sockfd, void* data, unsigned int length)
 
 	seg_t *seg = &(sb->seg);
 	unsigned seq_num = p->next_seqNum;
-	p->next_seqNum += length;
+	p->next_seqNum ++;
+
 	// set header
-	set_stcp_hdr( &(seg->header), p->client_portNum, p->server_portNum, seq_num, 0, sizeof(stcp_hdr_t)+length, DATA, 0, 0 );
+	set_stcp_hdr( &(seg->header), p->client_portNum, p->server_portNum, seq_num, 0, length, DATA, 0, 0 );
 	// copy data
 	int i;
 	char *data_begin = (char *)(seg->data);
@@ -534,11 +543,13 @@ int stcp_client_send(int sockfd, void* data, unsigned int length)
 	}
 
 	// unsentBuffer will handle it
-	pthread_mutex_lock(ctcb_table[sockfd]->bufMutex);
+	pthread_mutex_lock(p->bufMutex);
 
-	int ret = sendData(ctcb_table[sockfd], sb);
+	printf("before sendData\n");
+	int ret = sendData(p, sb);
+	printf("after sendData\n");
 	
-	pthread_mutex_unlock(ctcb_table[sockfd]->bufMutex);
+	pthread_mutex_unlock(p->bufMutex);
 	
 	return (!ret) ? -1 : 0;
 }
@@ -597,7 +608,7 @@ int stcp_client_close(int sockfd) {
 	else {
 		free_sendBuf(p);
 		free(p);
-		p = NULL;
+		ctcb_table[sockfd] = NULL;
 		return 1;
 	}
 }
