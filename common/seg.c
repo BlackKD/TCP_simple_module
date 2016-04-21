@@ -42,8 +42,12 @@ int sip_sendseg(int connection, seg_t* segPtr)
 		buffer[2+j] = ((char*)(segPtr))[j];
     buffer[2+j] = '!';
     buffer[j+3] = '#';
-
-
+	int i = 0;
+	for(i = 0 ; i < 1504;i++)
+	{
+		printf("%d ",buffer[i]);
+	}
+	printf("\n");
     if(send(connection,buffer,sizeof(buffer),0)<=0)
     {
         printf("send error!\n");
