@@ -34,13 +34,13 @@ int sip_sendseg(int connection, seg_t* segPtr)
    // segPtr->header.checksum = checksum(segPtr);
     char buffer[1504];
     memset(&buffer,0,sizeof(buffer));
-    buffer[0] = '!';
+    buffer[0] = '$';
     buffer[1] = '&';
 
 	int j;
 	for(j = 0; j < sizeof(seg_t); j ++)
 		buffer[2+j] = ((char*)(segPtr))[j];
-    buffer[2+j] = '!';
+    buffer[2+j] = '$';
     buffer[j+3] = '#';
 	int i = 0;
 	for(i = 0 ; i < 1504;i++)
@@ -89,7 +89,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
     {	
         char temp;
         recv(connection,&temp,sizeof(char),0);
-        if(temp=='!')
+        if(temp=='$')
         {
                 recv(connection,&temp,sizeof(char),0);
                 if(temp == '&')
@@ -98,10 +98,10 @@ int sip_recvseg(int connection, seg_t* segPtr)
                     memset(&buffer,0,1504);
                     char temp2 = 0;
                     int i = 0;
-                    while(temp2!='!')
+                    while(temp2!='$')
                     {
                         recv(connection,&temp2,sizeof(char),0);
-                        if(temp2!='!'&&i<1504)
+                        if(temp2!='$'&&i<1504)
                         {
                             buffer[i] = temp2;
                             i++;
