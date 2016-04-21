@@ -209,6 +209,22 @@ void handle_finack(seg_t *p) {
 	pthread_mutex_unlock(&(tcb_mutex[sock]));
 }
 
+int sendUnsent(client_tcb_t *tcb) {
+	printf("send the unsent segs\n");
+	if(tcb == NULL) return 0;
+
+	segBuf_t *unsentHead = tcb->sendBufunSent;
+	while(unsentHead != NULL) {
+		if( !sendData(tcb, unsentHead) ) 
+			return 0;
+		else {
+			unsentHead = unsentHead->next;
+			tcb->sendBufunSent = unsentHead;
+		}
+	}
+	return 0;
+}
+
 void handle_dataack(seg_t *p) {
 	printf("handle_dataack\n");
 
@@ -242,6 +258,7 @@ segBuf_t *create_sbuf() {
 	if(p != NULL) {
 		p->sentTime = 0;
 		p->next = NULL;
+		memset(&(p->seg), 0, sizeof(seg_t));
 	} 
 	else 
 		printf("create_sbuf error.\n");
@@ -271,21 +288,6 @@ int add2notackedBuf(client_tcb_t *tcb, segBuf_t *sb) {
 	return 1;
 }
 
-int sendUnsent(client_tcb_t *tcb) {
-	if(tcb == NULL) return 0;
-
-	segBuf_t *unsentHead = tcb->sendBufunSent;
-	while(unsentHead != NULL) {
-		if( !sendData(tcb, unsentHead) ) 
-			return 0;
-		else {
-			unsentHead = unsentHead->next;
-			tcb->sendBufunSent = unsentHead;
-		}
-	}
-	return 0;
-}
-
 /* 
  * If the length of "sent but not acked" buffer is not less than GBN_WINDOW, then
  * add the seg to the "unsent" buffer tail;
@@ -294,6 +296,7 @@ int sendUnsent(client_tcb_t *tcb) {
  * On error, 0 will be returned
  */
 int sendData(client_tcb_t *tcb, segBuf_t *sb) {
+	printf("sendData\n");
 	if(tcb == NULL || sb == NULL) return 0;
 
 	if(tcb->unAck_segNum < GBN_WINDOW) { // send it
@@ -305,6 +308,7 @@ int sendData(client_tcb_t *tcb, segBuf_t *sb) {
 		return add2notackedBuf(tcb, sb);
 	}
 	else { // add it to the "unsent" buffer
+		printf("notAcked buffer is full and add the segBuf to unsent buffer\n");
 		segBuf_t *unsentHead = tcb->sendBufunSent;
 		segBuf_t *unsentTail = tcb->sendBufTail;
 
@@ -321,24 +325,31 @@ int sendData(client_tcb_t *tcb, segBuf_t *sb) {
 }
 
 /*
- * retransmit all the unAcked
+ * retransmit all the unAcked from tail
  */
-void retransmitData(client_tcb_t *tcb) {
+void retransmitData(client_tcb_t *tcb, segBuf_t *cur) {
+	// excepction
 	if(tcb == NULL) return;
 
-	segBuf_t *head = tcb->sendBufHead;
-	while(head != NULL) {
-		segBuf_t *h_temp = head;
-		// remove it from unAcked buffer
-		head = head->next;
-		tcb->sendBufHead = head;
-		tcb->unAck_segNum --;
-		// send it
-		sendData(tcb, h_temp);
-	}
+	// end the recursion
+	if(cur == NULL) return;
+
+	// first enter retransmitData
+	// the retransmitted segs will add to the unAcked buffer's head
+	if( cur == tcb->sendBufHead ) tcb->sendBufHead = NULL;
+    
+	// recursion
+	retransmitData(tcb, cur->next);
+
+	// deal with this node
+	tcb->unAck_segNum --;
+	// send it, and
+	// the case that unAcked buffer is full will not appear here,
+	// so the tcb->sendBufHead will not be changed by sendDat
+	sendData(tcb, cur);
 }
 
-void checkDataTimeout(void *arg) {
+void *checkDataTimeout(void *arg) {
 	int i;
 	while(1) {
 		for(i = 0; i < TABLE_LEN; i ++) {
@@ -347,11 +358,11 @@ void checkDataTimeout(void *arg) {
 				pthread_mutex_lock(tcb->bufMutex);
 			
 				segBuf_t *sb = tcb->sendBufHead;
-				sb->sentTime ++;
+				sb->sentTime += SENDBUF_POLLING_INTERVAL;
 				// if newest unAcked seg timeout, retransmit all the unacked
 				// else add all the unscked segs' sentTime
 				if(sb->sentTime >= DATA_TIMEOUT)
-					retransmitData(tcb);
+					retransmitData(tcb, tcb->sendBufHead);
 				else 
 					while( (sb = sb->next) != NULL )
 						sb->sentTime += SENDBUF_POLLING_INTERVAL;
@@ -361,6 +372,7 @@ void checkDataTimeout(void *arg) {
 		}
 		usleep(SENDBUF_POLLING_INTERVAL);
 	}
+	return NULL;
 
 }
 
@@ -513,7 +525,7 @@ int stcp_client_send(int sockfd, void* data, unsigned int length)
 	unsigned seq_num = p->next_seqNum;
 	p->next_seqNum += length;
 	// set header
-	set_stcp_hdr( &(seg->header), p->client_portNum, p->server_portNum, seq_num, 0, 0, DATA, 0, 0 );
+	set_stcp_hdr( &(seg->header), p->client_portNum, p->server_portNum, seq_num, 0, sizeof(stcp_hdr_t)+length, DATA, 0, 0 );
 	// copy data
 	int i;
 	char *data_begin = (char *)(seg->data);
