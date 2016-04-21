@@ -162,6 +162,7 @@ int stcp_server_recv(int sockfd, void* buf, unsigned int length)
 		else if(length < 0)
 		{
 			printf("too short need!n\n");
+			exit(1);
 		}
 		
 	}

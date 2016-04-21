@@ -56,10 +56,10 @@ int sendseg(int conn, client_tcb_t *p, seg_t *segPtr) {
 	}
 
 	// send the segment
-	if( segPtr->header.seq_num == 36 )
+	if( segPtr->header.seq_num == 13 )
    {
-	   int i ;
-	   i ++;
+	   
+	   while(1);
    }
 	if( !sip_sendseg(conn, segPtr) )
 		return 0;
