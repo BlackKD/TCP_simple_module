@@ -215,6 +215,7 @@ int sendUnsent(client_tcb_t *tcb) {
 
 	segBuf_t *unsentHead = tcb->sendBufunSent;
 	while(unsentHead != NULL) {
+		printf("sending an unsent seg, seq_num: %d\n", unsentHead->seg.header.seq_num);
 		if( !sendData(tcb, unsentHead) ) 
 			return 0;
 		else {
@@ -226,7 +227,7 @@ int sendUnsent(client_tcb_t *tcb) {
 }
 
 void handle_dataack(seg_t *p) {
-	printf("handle_dataack\n");
+	printf("handle_dataack, the acked_num is: %d\n", p->header.ack_num);
 
 	stcp_hdr_t *h = &(p->header);
 	int sock = search_ctcb(h->dest_port);
@@ -237,16 +238,34 @@ void handle_dataack(seg_t *p) {
 	pthread_mutex_lock(tcb->bufMutex);
 	
 	// ack the unacked
-	segBuf_t *sb = tcb->sendBufHead;
-	while(sb != NULL) {
-		segBuf_t *sb_temp = sb;
-		sb = sb->next;
-		if((sb_temp->seg).header.seq_num <= p->header.ack_num) {
-			tcb->sendBufHead = sb;
-			free(sb_temp);
-			tcb->unAck_segNum --;
+	segBuf_t *cur = tcb->sendBufHead;
+	segBuf_t *last = NULL;
+	while(cur != NULL) {
+		// check whether the current node is the first node to be removed 
+		if ((cur->seg).header.seq_num < p->header.ack_num) {
+			// remove the nodes after cur
+			do {
+				printf("sockfd:%d, Remove the unacked seq_num: %d, the received acked_num: %d\n", 
+						sock, (cur->seg).header.seq_num, p->header.ack_num);
+				segBuf_t *cur_temp = cur;
+				cur = cur->next;
+				free(cur_temp);
+				tcb->unAck_segNum --;
+			} while( cur != NULL);
+
+			if(last != NULL)
+				last->next = NULL;
+			else // head
+				tcb->sendBufHead = NULL;
+
+			break; // stop finding 
 		}
+
+		// check next
+		last = cur; 
+		cur = cur->next;
 	}
+
 	// send the unsent
 	sendUnsent(tcb);
 
@@ -298,10 +317,11 @@ int add2notackedBuf(client_tcb_t *tcb, segBuf_t *sb) {
  * On error, 0 will be returned
  */
 int sendData(client_tcb_t *tcb, segBuf_t *sb) {
-	printf("sendData\n");
+	printf("sendData ");
 	if(tcb == NULL || sb == NULL) return 0;
 
 	if(tcb->unAck_segNum < GBN_WINDOW) { // send it
+		printf("send the DATA directly and ");
 		if( !sendseg(connfd, tcb, &(sb->seg)) ) {
 			printf("Send a DATA failed.\n");
 			return 0;
@@ -368,8 +388,10 @@ void *checkDataTimeout(void *arg) {
 				sb->sentTime += SENDBUF_POLLING_INTERVAL;
 				// if newest unAcked seg timeout, retransmit all the unacked
 				// else add all the unscked segs' sentTime
-				if(sb->sentTime >= DATA_TIMEOUT)
+				if(sb->sentTime >= DATA_TIMEOUT) {
+					printf("retransmitting Data\n");
 					retransmitData(tcb, tcb->sendBufHead);
+				}
 				else 
 					while( (sb = sb->next) != NULL )
 						sb->sentTime += SENDBUF_POLLING_INTERVAL;
@@ -521,37 +543,41 @@ int stcp_client_connect(int sockfd, unsigned int server_port) {
 int stcp_client_send(int sockfd, void* data, unsigned int length)
 {
 	printf("stcp_client_send\n");
-	segBuf_t *sb = create_sbuf();
-	if(sb == NULL) 
-		return -1;
 
 	client_tcb_t *p = ctcb_table[sockfd];
-	if(p == NULL)
-		return -1;
+	if(p == NULL) return -1;
 
-	seg_t *seg = &(sb->seg);
-	unsigned seq_num = p->next_seqNum;
-	p->next_seqNum ++;
+	int rest_len = length;
+	char *data_begin = (char *)data;
+	while( rest_len > 0 ) {
+		segBuf_t *sb = create_sbuf();
+		if(sb == NULL) 	return -1;
 
-	// set header
-	set_stcp_hdr( &(seg->header), p->client_portNum, p->server_portNum, seq_num, 0, length, DATA, 0, 0 );
-	// copy data
-	int i;
-	char *data_begin = (char *)(seg->data);
-	for(i = 0; i < length; i ++) {
-		data_begin[i] = ((char *)data)[i];
+		seg_t *seg = &(sb->seg);
+		unsigned seq_num = p->next_seqNum ++;
+
+		printf("Send Data seq_num: %d\n", seq_num);
+		// copy data
+		int i;
+		int cur_send_len = (rest_len >= MAX_SEG_LEN) ? MAX_SEG_LEN : rest_len;
+		printf("rest length: %d\n", rest_len);
+		for(i = 0; i < cur_send_len; i ++) {
+			(seg->data)[i] = *(data_begin ++);
+		}
+		rest_len -= cur_send_len;
+		// set header
+		set_stcp_hdr( &(seg->header), p->client_portNum, p->server_portNum, seq_num, 
+				0, cur_send_len, DATA, 0, 0 );
+
+		// unsentBuffer will handle it
+		pthread_mutex_lock(p->bufMutex);
+		int ret = sendData(p, sb);
+		pthread_mutex_unlock(p->bufMutex);
+
+		if(!ret) return -1;
 	}
-
-	// unsentBuffer will handle it
-	pthread_mutex_lock(p->bufMutex);
-
-	printf("before sendData\n");
-	int ret = sendData(p, sb);
-	printf("after sendData\n");
 	
-	pthread_mutex_unlock(p->bufMutex);
-	
-	return (!ret) ? -1 : 0;
+	return 1;
 }
 
 // 这个函数用于断开到服务器的连接. 它以套接字ID作为输入参数. 套接字ID用于找到TCB表中的条目.  
