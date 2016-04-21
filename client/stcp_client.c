@@ -56,7 +56,7 @@ int sendseg(int conn, client_tcb_t *p, seg_t *segPtr) {
 	}
 
 	// send the segment
-	if( segPtr->header.seq_num == 11 )
+	if( segPtr->header.seq_num == 36 )
    {
 	   int i ;
 	   i ++;
@@ -582,7 +582,19 @@ int stcp_client_send(int sockfd, void* data, unsigned int length)
 		if(!ret) return -1;
 	}
 	
-	return 1;
+	do {
+		pthread_mutex_lock(p->bufMutex);
+		printf("check if over\n");
+	    if( p->sendBufHead == NULL && p->sendBufunSent == NULL ) {
+			pthread_mutex_unlock(p->bufMutex);
+			printf("over and return\n");
+			return 1;
+		}
+		pthread_mutex_unlock(p->bufMutex);
+		usleep(100);
+	}while(1);
+
+	return -1;
 }
 
 // 这个函数用于断开到服务器的连接. 它以套接字ID作为输入参数. 套接字ID用于找到TCB表中的条目.  
