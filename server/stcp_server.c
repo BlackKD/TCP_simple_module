@@ -247,7 +247,7 @@ void* seghandler(void* arg)
                                 TCBtable[i]->client_portNum = mytcpMessage->header.src_port;
                                 
                                 TCBtable[i]->state = CONNECTED;
-                                TCBtable[i]->expect_seqNum = mytcpMessage->header.seq_num + 1;
+                                //TCBtable[i]->expect_seqNum = mytcpMessage->header.seq_num + 1;
                                 TCBtable[i]->recvBuf = mytcpMessage -> data;
                                 TCBtable[i]->usedBufLen = TCBtable[i]->usedBufLen +mytcpMessage ->header.length;
                                 
@@ -332,7 +332,7 @@ void* seghandler(void* arg)
 									if(TCBtable[i]->usedBufLen + mytcpMessage->header.length >= RECEIVE_BUF_SIZE)
 									{
 										printf("TCB buffer overflow! throw away! %d\n",TCBtable[i]->usedBufLen);
-										TCBtable[i]->expect_seqNum =  mytcpMessage->header.seq_num +1;
+										TCBtable[i]->expect_seqNum = mytcpMessage->header.seq_num + mytcpMessage->header.length;
 										seg_t * retcpMessage = (seg_t*)malloc(sizeof(seg_t));
 										memset(retcpMessage,0,sizeof(seg_t));
 										retcpMessage->header.src_port = TCBtable[i]->server_portNum;
@@ -345,7 +345,8 @@ void* seghandler(void* arg)
 									else
 									{
 										printf("TCB buffer OK! add more! %d\n",TCBtable[i]->usedBufLen);
-										TCBtable[i]->expect_seqNum =  mytcpMessage->header.seq_num +1;
+										//TCBtable[i]->expect_seqNum =  mytcpMessage->header.seq_num +1;
+										TCBtable[i]->expect_seqNum = mytcpMessage->header.seq_num + mytcpMessage->header.length;
 										memcpy(TCBtable[i]->recvBuf + TCBtable[i]->usedBufLen , mytcpMessage->data , mytcpMessage->header.length);
 										TCBtable[i]->usedBufLen = TCBtable[i]->usedBufLen + mytcpMessage->header.length;
 										seg_t * retcpMessage = (seg_t*)malloc(sizeof(seg_t));
