@@ -28,8 +28,8 @@
 #define CLIENTPORT1 87
 #define SERVERPORT1 88
 
-//在发送文件后, 等待5秒, 然后关闭连接.
-#define WAITTIME 5
+//在发送文件后, 等待30秒, 然后关闭连接.
+#define WAITTIME 30 
 
 #define SERV_ADDR "114.212.190.188"
 #define SERV_PORT 9009
