@@ -272,6 +272,8 @@ void handle_dataack(seg_t *p) {
 		cur = cur->next;
 	}
 	tcb->sendBufunAckHead = cur;
+	if (cur == NULL)
+		tcb->sendBufunAckTail = NULL; // empty
 
 	// send the unsent
 	sendUnsent(tcb);
