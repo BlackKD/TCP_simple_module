@@ -94,7 +94,7 @@ int main() {
 
 	//将接收到的文件数据保存到文件receivedtext.txt中
 	FILE* f;
-	f = fopen("receivedtext.txt","a");
+	f = fopen("receivedtext.txt","w");
 	fwrite(buf,fileLen,1,f);
 	fclose(f);
 	free(buf);
