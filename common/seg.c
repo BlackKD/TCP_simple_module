@@ -148,12 +148,12 @@ int sip_recvseg(int connection, seg_t* segPtr)
                         } 
 						
 						
-				//		if(checkchecksum(segPtr) == -1)
-					//	{
-						//	printf("checksum error lose packet\n");
-							//return 1;
-						//}
-							//return 1;
+						if(checkchecksum(segPtr) == -1)
+						{
+							printf("checksum error lose packet\n");
+							return 1;
+						}
+							return 1;
 						
                         return 0;
                     }
@@ -188,13 +188,13 @@ int seglost(seg_t* segPtr) {
 		//50%可能性是错误的校验和
 		else {
 			//获取数据长度
-		//	int len = sizeof(stcp_hdr_t)+segPtr->header.length;
+			int len = sizeof(stcp_hdr_t)+segPtr->header.length;
 			//获取要反转的随机位
-		//	int errorbit = rand()%(len*8);
+			int errorbit = rand()%(len*8);
 			//反转该比特
-		//	char* temp = (char*)segPtr;
-		//	temp = temp + errorbit/8;
-		//	*temp = *temp^(1<<(errorbit%8));
+			char* temp = (char*)segPtr;
+			temp = temp + errorbit/8;
+			*temp = *temp^(1<<(errorbit%8));
 			return 0;
 		}
 	}
