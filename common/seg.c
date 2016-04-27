@@ -14,7 +14,7 @@
 //  用于客户端和服务器的SIP API 
 //  =======================================
 //
-//  我们在下面提供了每个函数调用的原型定义和细节说明, 但这些只是指导性的, 你完全可以根据自己的想法来设计代码.
+//  我们在下面提供了每个函数调用的原型定义和细节说明, 但这些只是指c导性的, 你完全可以根据自己的想法来设计代码.
 //
 //  注意: sip_sendseg()和sip_recvseg()是由网络层提供的服务, 即SIP提供给STCP.
 //
@@ -28,11 +28,12 @@
 // 最后使用send()发送表明段结束的两个字符.
 //
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
+
 int sip_sendseg(int connection, seg_t* segPtr)
 {
-   // segPtr->header.checksum = checksum(segPtr);
-    char buffer[1504];
+  // segPtr->header.checksum = checksum(segPtr);
+   printf("header.checksum %d\n",segPtr->header.checksum);
+   char buffer[1504];
     memset(&buffer,0,sizeof(buffer));
     buffer[0] = '$';
     buffer[1] = '&';
@@ -42,11 +43,14 @@ int sip_sendseg(int connection, seg_t* segPtr)
 		buffer[2+j] = ((char*)(segPtr))[j];
     buffer[2+j] = '$';
     buffer[j+3] = '#';
-	//int i = 0;
-	//for(i = 0 ; i < 1504;i++)
-	//{
-	//	printf("%d ",buffer[i]);
-//	}
+    if(segPtr->header.ack_num == 134600)
+	{
+	int i = 0;
+	for(i = 0 ; i < 1504;i++)
+	{
+		printf("%d ",buffer[i]);
+	}
+	}
 	printf("\n");
     if(send(connection,buffer,sizeof(buffer),0)<=0)
     {
@@ -89,11 +93,11 @@ int sip_recvseg(int connection, seg_t* segPtr)
     {	
         char temp = 0;
         recv(connection,&temp,sizeof(char),0);
-//		printf("%d ",temp);
+		printf("%d ",temp);
         if(temp=='$')
         {
                 recv(connection,&temp,sizeof(char),0);
-//				printf("%d ",temp);
+				printf("%d ",temp);
                 if(temp == '&')
                 {
                     char buffer[1504];
@@ -104,7 +108,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
 					for(k = 0;k < 24;k++)
 					{
 						recv(connection,&temp2,sizeof(char),0);
-//						printf("%d ",temp2);
+					//	printf("%d ",temp2);
 						buffer[i] = temp2;
 						i++;
 					}
@@ -113,7 +117,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
                     while(temp2!='$')
                     {
                         recv(connection,&temp2,sizeof(char),0);
-//						printf("%d ",temp2);
+					//	printf("%d ",temp2);
                         if(temp2!='$'&&i<1504)
                         {
                             buffer[i] = temp2;
@@ -129,19 +133,26 @@ int sip_recvseg(int connection, seg_t* segPtr)
                         } 
                     }
                     recv(connection,&temp2,sizeof(char),0);
-//					printf("%d ",temp2);
+					//printf("%d ",temp2);
                     if(temp2 == '#')
                     { 
                        
                         printf("receive one packet!\n");
                         memcpy(segPtr,buffer,sizeof(seg_t));
-				//	if(seglost(segPtr))
+					if(seglost(segPtr))
 
-                  //      {
-                    //        printf("lose packet!\n");
-                      //      return 1;
-                       // } 	
-						//if(segPtr->header.checksum != checkchecksum(segPtr))
+                        {
+							
+                            printf("lose packet!\n");
+                            return 1;
+                        } 
+						
+						
+				//		if(checkchecksum(segPtr) == -1)
+					//	{
+						//	printf("checksum error lose packet\n");
+							//return 1;
+						//}
 							//return 1;
 						
                         return 0;
@@ -157,6 +168,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
                 else{
                     printf("\nno nomal '&' in head\n");
 					sleep(10);
+					exit(1);
                     //return 0;
                 } 
         }
@@ -176,13 +188,13 @@ int seglost(seg_t* segPtr) {
 		//50%可能性是错误的校验和
 		else {
 			//获取数据长度
-			int len = sizeof(stcp_hdr_t)+segPtr->header.length;
+		//	int len = sizeof(stcp_hdr_t)+segPtr->header.length;
 			//获取要反转的随机位
-			int errorbit = rand()%(len*8);
+		//	int errorbit = rand()%(len*8);
 			//反转该比特
-			char* temp = (char*)segPtr;
-			temp = temp + errorbit/8;
-			*temp = *temp^(1<<(errorbit%8));
+		//	char* temp = (char*)segPtr;
+		//	temp = temp + errorbit/8;
+		//	*temp = *temp^(1<<(errorbit%8));
 			return 0;
 		}
 	}
@@ -196,8 +208,10 @@ int seglost(seg_t* segPtr) {
 unsigned short checksum(seg_t* segment)
 {
 	segment->header.checksum = 0;
-	int checksum = sizeof(stcp_hdr_t) + strlen(segment->data);
-	
+	int mychecksum = sizeof(stcp_hdr_t) + strlen(segment->data);
+	//printf("%d\n",mychecksum);
+	unsigned char *temp  = (unsigned char*)malloc(mychecksum);
+	memcpy(temp,segment,mychecksum);
 	/*if(((int)checksum/2 )* 2 != checksum)
 	{
 		checksum++;
@@ -213,25 +227,32 @@ unsigned short checksum(seg_t* segment)
 	}
 	*/
 	unsigned long cksum=0;
-	while(checksum>1)
+	while(mychecksum>1)
 	{
-	cksum+=*(unsigned short int *)segment++;
-	checksum-=sizeof(unsigned short int);
+	cksum+=*(unsigned short int *)temp;
+	temp +=2;
+	//printf("%d\n",cksum);
+	mychecksum-=sizeof(unsigned short int);
 	}
-	if(checksum)
+	if(mychecksum)
 	{
-	cksum+=*(char *)segment;
+	cksum+=*(unsigned char *)temp;
 	}
 	while (cksum>>16)
 		cksum=(cksum>>16)+(cksum & 0xffff);
+	printf("cksum %d\n",(unsigned short int)(~cksum));
 	return (unsigned short int)(~cksum);
 }
 
 //这个函数检查段中的校验和, 正确时返回1, 错误时返回-1
 int checkchecksum(seg_t* segment)
-{
+{       
 		int checksum = sizeof(stcp_hdr_t) + strlen(segment->data);
-	
+		//printf("checkchecksum! %d\n",checksum);
+		//printf("header.check %d\n",segment->header.checksum);
+	    unsigned char *temp = (unsigned char*)malloc(checksum);
+		memcpy(temp,segment,checksum);
+		//printf("temp->checksum: %d\n", *(unsigned short int*)(temp + 22));
 	/*if(((int)checksum/2 )* 2 != checksum)
 	{
 		checksum++;
@@ -249,15 +270,20 @@ int checkchecksum(seg_t* segment)
 	unsigned long cksum=0;
 	while(checksum>1)
 	{
-	cksum+=*(unsigned short int *)segment++;
+	//printf("!%d\n",*(unsigned short int*)temp);
+	cksum+=*(unsigned short int *)temp;
+	temp += 2;
+	//printf("%d\n",cksum);
 	checksum-=sizeof(unsigned short int);
 	}
 	if(checksum)
 	{
-	cksum+=*(char *)segment;
+	cksum+=*(unsigned char *)temp;
 	}
+	
 	while (cksum>>16)
 		cksum=(cksum>>16)+(cksum & 0xffff);
+	printf("checkchecksum %d\n",~cksum);
   	if( (unsigned short)(~cksum) != 0 )
 	{
 		// TODO:
