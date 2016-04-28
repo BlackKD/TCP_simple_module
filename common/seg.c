@@ -31,17 +31,27 @@
 
 int sip_sendseg(int connection, seg_t* segPtr)
 {
-  // segPtr->header.checksum = checksum(segPtr);
+	
+   segPtr->header.checksum = checksum(segPtr);
    printf("header.checksum %d\n",segPtr->header.checksum);
+       char *c = (char *)(&(segPtr->header.checksum));
+   /*if(c[0] == '`') {
+	   printf("checksum0: %c %d\n", c[0], c[0]);
+	   exit(0);
+   }
+   if(c[1] == '`') {
+	   printf("checksum1: %c %d\n", c[1], c[1]);
+	   exit(0);
+   }*/
    char buffer[1504];
     memset(&buffer,0,sizeof(buffer));
-    buffer[0] = '$';
+    buffer[0] = '`';
     buffer[1] = '&';
 
 	int j;
 	for(j = 0; j < sizeof(seg_t); j ++)
 		buffer[2+j] = ((char*)(segPtr))[j];
-    buffer[2+j] = '$';
+    buffer[2+j] = '`';
     buffer[j+3] = '#';
     if(segPtr->header.ack_num == 134600)
 	{
@@ -93,11 +103,11 @@ int sip_recvseg(int connection, seg_t* segPtr)
     {	
         char temp = 0;
         recv(connection,&temp,sizeof(char),0);
-		printf("%d ",temp);
-        if(temp=='$')
+		//printf("%d ",temp);
+        if(temp=='`')
         {
                 recv(connection,&temp,sizeof(char),0);
-				printf("%d ",temp);
+				//printf("%d ",temp);
                 if(temp == '&')
                 {
                     char buffer[1504];
@@ -113,12 +123,15 @@ int sip_recvseg(int connection, seg_t* segPtr)
 						i++;
 					}
                     
-                    
-                    while(temp2!='$')
+                    char temp3 = temp2;
+                    while(!(temp3 =='`'&&temp2 == '#'))
                     {
+						temp3 = temp2;
                         recv(connection,&temp2,sizeof(char),0);
+						
+						
 					//	printf("%d ",temp2);
-                        if(temp2!='$'&&i<1504)
+                        if(!(temp2=='#'&&temp3=='`')&&i<1504)
                         {
                             buffer[i] = temp2;
                             i++;
@@ -132,7 +145,7 @@ int sip_recvseg(int connection, seg_t* segPtr)
                              }
                         } 
                     }
-                    recv(connection,&temp2,sizeof(char),0);
+                    //recv(connection,&temp2,sizeof(char),0);
 					//printf("%d ",temp2);
                     if(temp2 == '#')
                     { 
@@ -149,11 +162,11 @@ int sip_recvseg(int connection, seg_t* segPtr)
 						
 						
 						if(checkchecksum(segPtr) == -1)
-						{
+					{
 							printf("checksum error lose packet\n");
 							return 1;
 						}
-							return 1;
+					//		return 1;
 						
                         return 0;
                     }
@@ -189,7 +202,7 @@ int seglost(seg_t* segPtr) {
 		else {
 			//获取数据长度
 			int len = sizeof(stcp_hdr_t)+segPtr->header.length;
-			//获取要反转的随机位
+		//	//获取要反转的随机位
 			int errorbit = rand()%(len*8);
 			//反转该比特
 			char* temp = (char*)segPtr;
